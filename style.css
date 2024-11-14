@@ -1,0 +1,260 @@
+    /* ---------------------------------- básico--------------------------------------- */
+
+@font-face{
+    font-family:"pet-shop" ;
+    src: url(./img/Animal\ Paw.ttf);
+}
+
+
+
+
+
+
+    /* ---------------------------------- básico--------------------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+   
+    line-height: 1.6;
+    background-image: url(./img/fundo.avif);
+   
+}
+
+/* ----------- Responsividade para telas pequenas ------------ */
+@media (max-width: 768px) {
+    body {
+        background-color: #e4e4e4;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+
+/* ----------------------------------Cabeçalho-------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+    background-image: url(./img/fundo.avif);
+    
+}
+
+header h1 {
+   font-family: "pet-shop";
+    padding: 70px;
+    font-size: 60px;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ------------------------------Menu Fixo--------------------------------------------- */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #881313;
+    padding: 1px 0;
+    z-index: 100;
+    display: flex;
+    justify-content: center;  
+    gap: 20px;                
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+
+/* ------------------------------- Menu para dispositivos móveis ------------------- */
+@media (max-width: 768px) {
+    
+    header h1 {
+        padding: 180px;}
+    
+    #navbar {
+        flex-direction: column;
+         
+    }
+
+    #navbar a {
+        padding: 12px 20px;
+        font-size: 1rem;
+    }
+}
+
+/*--------------------------------- Produtos e Animais--------------------------------- */
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+li {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+img {
+    width: 100px; 
+    height: auto;
+}
+.descricao {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+ #produtos h2 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "pet-shop";
+}
+
+ .animais h2 {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "pet-shop";
+}
+.porco{
+    width: 69px; 
+}
+
+/*---------------------------------------------- Vídeo------------------------------------ */
+#video {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#video h2{
+    font-family: "pet-shop";
+}
+
+.whatsapp-btn {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.whatsapp-btn a {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/*----------------------------------- Cadastro ---------------------------*/
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+   
+}
+.container h2 {
+   font-family: "pet-shop";
+    color: #8114e7;
+    display: flex;
+    justify-content: center;
+}
+label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: block;
+    color: #000000;
+}
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+button {
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.notification {
+    display: none;
+    background-color: #00ff08;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+/*--------------------------------------------------- FAQ------------------------------- */
+.faq-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    
+    max-width: 800px;
+    margin: 0 auto;
+}
+.faq {
+    margin-bottom: 20px;
+}
+.faq h3 {
+    font-size: 18px;
+    color: #0051ff;
+}
+.faq p {
+    font-size: 16px;
+    color: #000000;
+}
+
+#faq h2{
+    display: flex;
+    justify-content: center;
+    font-family: "pet-shop";
+}
+
+
+/*---------------------------------------------- rodape--------------------- */
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: white;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: -50px;
+}
+
+footer .social-links {
+    margin-bottom: 10px;
+}

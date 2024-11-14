@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Pet - Do mais Lindo ao Mais Feio</title>
+    
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="shortcut icon" href="./img/pilantra.jfif" type="#">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+       
+        <h1>Mundo Pet </h1>
+        
+         <!-- Menu Fixo -->
+    <nav id="navbar">
+        
+           <a href="#faq">FAQ</a> 
+           <a href="#produtos">produtos</a>
+           <a href="#video">contato</a>
+      
+    </nav>
+
+    </header>
+
+  
+
+    <!-- Carrossel de Imagens -->
+    <section>
+        
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./img/chamma.webp">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/chama do dois.avif" alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./img/pilantra.jfif" alt="Terceiro Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+    
+    </section>
+    
+
+    <!-- Lista de Rações -->
+    <section id="produtos">
+        <h2>Rações para seu Pet</h2>
+        <ul>
+            <li>
+                <img src="./img/ração 1.webp" alt="Imagem 1">
+                <p class="descricao">R$ 55,78 reais</p>
+            </li>
+            <li>
+                <img src="./img/ração 2.webp" alt="Imagem 2">
+                <p class="descricao">R$ 60 reais</p>
+            </li>
+            <li>
+                <img src="./img/ração 3.webp" alt="Imagem 3">
+                <p class="descricao">R$ 90,78 reais</p>
+            </li>
+        </ul>
+    
+    </section>
+
+    <!-- Lista de Animais -->
+    <section class="animais">
+        <h2>Adote um Amigo</h2>
+        <ul>
+            <li>
+                <img src="./img/animal 1.jfif" alt="Imagem 1">
+                <p class="descricao">zé está atras da decima segunda casa </p>
+            </li>
+            <li>
+                <img src="./img/animal 2.jpg" alt="Imagem 2">
+                <p class="descricao">lindinho esta com coração partido</p>
+            </li>
+            <li >
+                <img class="porco" src="./img/animal 3.jpg" alt="Imagem 3">
+                <p class="descricao">Midas precisa de um amigo </p>
+            </li>
+        </ul>
+    
+    </section>
+
+    <!-- Espaço para Vídeo -->
+    <section id="video">
+        <h2>Assista ao Nosso Vídeo</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/NpAcIek7Rbw?si=9GaqsuQVFMNm945i" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    <!-- Botão WhatsApp -->
+    <div class="whatsapp-btn">
+        <a href="https://wa.me/61996420837" target="_blank">Contato via WhatsApp</a>
+    </div>
+     </section>
+    <!-- Área de Cadastro -->
+    <div class="container">
+        <h2>Cadastro de Cliente</h2>
+        <form id="cadastroForm">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite seu nome">
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required placeholder="Digite seu CEP" pattern="\d{5}-\d{3}">
+
+            <label for="telefone">Telefone:</label>
+            <input type="text" id="telefone" name="telefone" required placeholder="Digite seu telefone" pattern="\(\d{2}\) \d{4,5}-\d{4}">
+
+            <button type="submit">Cadastrar</button>
+        </form>
+
+        <div id="notification" class="notification">
+            Obrigado pelo seu cadastro! Nossa loja entrará em contato com você em breve.
+        </div>
+    </div>
+    <!-- FAQ -->
+    <section id="faq">
+        <h2>Perguntas Frequentes</h2>
+        <div class="faq-container">
+
+            <div class="faq">
+                <h3>1. Quais produtos vocês oferecem para cães e gatos?</h3>
+                <p>Oferecemos uma ampla variedade de produtos para cães e gatos, incluindo rações de alta qualidade, brinquedos, acessórios, camas, coleiras, shampoos e muito mais para garantir o bem-estar e a diversão do seu pet!</p>
+            </div>
+    
+            <div class="faq">
+                <h3>2. Vocês têm produtos naturais ou orgânicos para animais?</h3>
+                <p>Sim! Temos uma linha completa de rações, petiscos e cuidados naturais e orgânicos, ideais para pets com necessidades especiais ou para quem prefere produtos mais saudáveis e sustentáveis.</p>
+            </div>
+    
+            <div class="faq">
+                <h3>3. Fazem entrega em domicílio?</h3>
+                <p>Sim! Realizamos entregas rápidas e seguras em todo o território nacional. Seu pet nunca vai ficar sem os produtos que ele ama!</p>
+            </div>
+    
+            <div class="faq">
+                <h3>4. Os produtos do site são de marcas confiáveis?</h3>
+                <p>Sim! Trabalhamos com as melhores marcas do mercado, garantindo que todos os produtos sejam de qualidade comprovada e aprovados pelos veterinários.</p>
+            </div>
+    
+            <div class="faq">
+                <h3>5. O site oferece opções de pagamento facilitadas?</h3>
+                <p>Sim, nosso site oferece diversas opções de pagamento, como cartões de crédito, boleto bancário e transferência, para sua maior comodidade.</p>
+            </div>
+    
+            <div class="faq">
+                <h3>6. Vocês têm algum programa de fidelidade ou descontos para clientes frequentes?</h3>
+                <p>Sim! Oferecemos um programa de fidelidade, onde você acumula pontos a cada compra e pode trocá-los por descontos ou produtos exclusivos. Fique de olho também nas promoções sazonais!</p>
+            </div>
+    
+            <div class="faq">
+                <h3>7. Posso encontrar produtos para animais exóticos no site?</h3>
+                <p>Sim! Temos uma linha completa de produtos para animais exóticos, como répteis, aves e roedores, com alimentos especializados, acessórios e cuidados essenciais.</p>
+            </div>
+    
+            <div class="faq">
+                <h3>8. Vocês oferecem serviços de banho e tosa?</h3>
+                <p>Sim, temos parcerias com petshops que oferecem serviços de banho e tosa para seu pet com todo o cuidado e carinho que ele merece. Entre em contato para agendar o atendimento.</p>
+            </div>
+    
+            <div class="faq">
+                <h3>9. O que fazer se o meu pedido chegar com algum produto danificado ou errado?</h3>
+                <p>Garantimos a satisfação dos nossos clientes. Caso haja algum problema com o seu pedido, basta entrar em contato conosco e resolveremos a situação rapidamente com troca ou reembolso.</p>
+            </div>
+    
+            <div class="faq">
+                <h3>10. Vocês têm opções de ração para pets com necessidades especiais?</h3>
+                <p>Sim, temos uma vasta gama de rações para cães e gatos com necessidades especiais, como dietas para controle de peso, alergias alimentares, saúde intestinal, entre outras opções terapêuticas.</p>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="social-links">
+            <a href="https://www.facebook.com/profile.php?id=100082397637785&mibextid=LQQJ4d">Facebook</a>
+            <a href="https://www.instagram.com/vilapet_petshop?igsh=M2JrNGUzM2hkcGk2">Instagram</a>
+            <a href="https://github.com/Vi7nna?tab=repositories">GitHub</a>
+        </div>
+        <p>&copy; 2024 PetShop - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="./script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
